@@ -76,7 +76,7 @@ function scrapeMvideo1() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0);
+            await page.setDefaultNavigationTimeout(10000);
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -98,7 +98,7 @@ function scrapeMvideo1() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `mvideo/mvideo_${Date.now()}.png` });
+                await page.screenshot({ path: `mvideo/mvideo_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -117,7 +117,7 @@ function scrapeMvideo2() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0); 
+            await page.setDefaultNavigationTimeout(10000); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -141,7 +141,7 @@ function scrapeMvideo2() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `mvideo/mvideo_${Date.now()}.png` });
+                await page.screenshot({ path: `mvideo/mvideo_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -160,7 +160,7 @@ function scrapeMvideo3() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0); 
+            await page.setDefaultNavigationTimeout(10000); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -184,7 +184,7 @@ function scrapeMvideo3() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `mvideo/mvideo_${Date.now()}.png` });
+                await page.screenshot({ path: `mvideo/mvideo_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -203,7 +203,7 @@ function scrapeCitilink1() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0); 
+            await page.setDefaultNavigationTimeout(10000); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -227,7 +227,7 @@ function scrapeCitilink1() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `citilink/citilink_${Date.now()}.png` });
+                await page.screenshot({ path: `citilink/citilink_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -289,7 +289,7 @@ function scrapeCitilink3() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0); 
+            await page.setDefaultNavigationTimeout(10000); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -313,7 +313,7 @@ function scrapeCitilink3() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `citilink/citilink_${Date.now()}.png` });
+                await page.screenshot({ path: `citilink/citilink_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -332,7 +332,7 @@ function scrapeCitilink4() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0); 
+            await page.setDefaultNavigationTimeout(10000); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -356,7 +356,7 @@ function scrapeCitilink4() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `citilink/citilink_${Date.now()}.png` });
+                await page.screenshot({ path: `citilink/citilink_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -368,48 +368,48 @@ function scrapeCitilink4() {
 }
 
 // старая функция для скраппинга в карусели ДНС
-function scrapeDns() {
-    // Создаю массив, в который буду пушить все полученные данные с сайта
-    let data = [];
-    // Запускаю Puppeteer
-    puppeteer.launch({ args: ['--no-sandbox'] })
-        .then(async (browser) => {
-            // Открываю в браузере новую страницу
-            let page = await browser.newPage();
-            // Ставлю ширину и высоту окна
-            page.setViewport({ width: 1366, height: 768 });
-            // Ставлю user-agent, чтобы сайты пропускали
-            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0');
-            // Перехожу на первую ссылку и жду, пока загрузится DOM
-            await page.goto(url_dns, { waitUntil: 'domcontentloaded' });
+// function scrapeDns() {
+//     // Создаю массив, в который буду пушить все полученные данные с сайта
+//     let data = [];
+//     // Запускаю Puppeteer
+//     puppeteer.launch({ args: ['--no-sandbox'] })
+//         .then(async (browser) => {
+//             // Открываю в браузере новую страницу
+//             let page = await browser.newPage();
+//             // Ставлю ширину и высоту окна
+//             page.setViewport({ width: 1366, height: 768 });
+//             // Ставлю user-agent, чтобы сайты пропускали
+//             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0');
+//             // Перехожу на первую ссылку и жду, пока загрузится DOM
+//             await page.goto(url_dns, { waitUntil: 'domcontentloaded' });
 
-            // Делаю паузу на 10 секунд, чтобы наверняка все загрузилось, в т.ч. для захвата скриншота
-            await page.waitForTimeout(10000);
+//             // Делаю паузу на 10 секунд, чтобы наверняка все загрузилось, в т.ч. для захвата скриншота
+//             await page.waitForTimeout(10000);
 
-            // Получаю DOM страницы сайта
-            await page.content()
-                .then((success) => {
-                    // Загружаю html в Cheerio
-                    const $ = cheerio.load(success);
-                    // Делаю выборку по элементу html и вытаскиваю от туда текст. Пушу это в массив
-                    const dnsList = $('.hype-landing-products__item-title');
-                    const dnsArr = [];
-                    dnsList.each((idx, el) => {
-                        data.push([$(el).text().trim(), 'link']);
-                    });
-                });
+//             // Получаю DOM страницы сайта
+//             await page.content()
+//                 .then((success) => {
+//                     // Загружаю html в Cheerio
+//                     const $ = cheerio.load(success);
+//                     // Делаю выборку по элементу html и вытаскиваю от туда текст. Пушу это в массив
+//                     const dnsList = $('.hype-landing-products__item-title');
+//                     const dnsArr = [];
+//                     dnsList.each((idx, el) => {
+//                         data.push([$(el).text().trim(), 'link']);
+//                     });
+//                 });
 
-                // Сохраняю новый скриншот
-                // await page.screenshot({ path: `dns/dns_${Date.now()}.png` });
+//                 // Сохраняю новый скриншот
+//                 // await page.screenshot({ path: `dns/dns_${Date.now()}.png` });
 
-            await browser.close();
-        })
-        .catch((err) => {
-            console.log(" CAUGHT WITH AN ERROR ", err);
-        });
+//             await browser.close();
+//         })
+//         .catch((err) => {
+//             console.log(" CAUGHT WITH AN ERROR ", err);
+//         });
 
-        return data;
-}
+//         return data;
+// }
 
 function scrapeDns1() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
@@ -462,7 +462,7 @@ function vkontakte() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
-            await page.setDefaultNavigationTimeout(0); 
+            await page.setDefaultNavigationTimeout(10000); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -491,7 +491,7 @@ function vkontakte() {
                 });
 
                 // Сохраняю новый скриншот
-                // await page.screenshot({ path: `path/name_${Date.now()}.png` });
+                await page.screenshot({ path: `path/name_${Date.now()}.png` });
 
             await browser.close();
         })
@@ -502,17 +502,6 @@ function vkontakte() {
         return data;
 }
 
-// Удаляю все старые скриншоты
-// fs.readdirSync('mvideo/').forEach(file => {
-//     fs.unlinkSync(`mvideo/${file}`);
-// });
-// fs.readdirSync('citilink/').forEach(file => {
-//     fs.unlinkSync(`citilink/${file}`);
-// });
-// fs.readdirSync('dns/').forEach(file => {
-//     fs.unlinkSync(`dns/${file}`);
-// });
-
 
 const bot = new telegraf(BOT_TOKEN);
 bot.start((ctx) => ctx.reply('Привет! Меня создал @mironov_ma'));
@@ -521,6 +510,17 @@ bot.hears('Привет', (ctx) => ctx.reply('Что нужно?'));
 
 // */60 8-22 * * * ежедневно каждый час с 8:00 до 22:00
 cron.schedule('*/2 * * * *', () => {
+    // Удаляю все старые скриншоты
+    fs.readdirSync('mvideo/').forEach(file => {
+        fs.unlinkSync(`mvideo/${file}`);
+    });
+    fs.readdirSync('citilink/').forEach(file => {
+        fs.unlinkSync(`citilink/${file}`);
+    });
+    fs.readdirSync('dns/').forEach(file => {
+        fs.unlinkSync(`dns/${file}`);
+    });
+
     let data = [
         scrapeMvideo1(),
         scrapeMvideo2(),
@@ -539,7 +539,7 @@ cron.schedule('*/2 * * * *', () => {
             bot.telegram.sendMessage(CHAT_ID, `${String.fromCodePoint(0x1F539)} Сообщение номер ${i+1}: \n${result[i]}`);
         }
         console.log('Message send!');
-    }, 50000);
+    }, 60000);
 });
 
 bot.launch();
