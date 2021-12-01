@@ -76,6 +76,7 @@ function scrapeMvideo1() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0);
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -116,6 +117,7 @@ function scrapeMvideo2() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -158,6 +160,7 @@ function scrapeMvideo3() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -200,6 +203,7 @@ function scrapeCitilink1() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -242,6 +246,7 @@ function scrapeCitilink2() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -284,6 +289,7 @@ function scrapeCitilink3() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -326,6 +332,7 @@ function scrapeCitilink4() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -412,6 +419,7 @@ function scrapeDns1() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
@@ -454,6 +462,7 @@ function vkontakte() {
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
+            await page.setDefaultNavigationTimeout(0); 
             // Ставлю ширину и высоту окна
             page.setViewport({ width: 1366, height: 768 });
             // Ставлю user-agent, чтобы сайты пропускали
