@@ -72,7 +72,7 @@ function scrapeMvideo1() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -112,7 +112,7 @@ function scrapeMvideo2() {
     // Создаю массив, куда буду записывать данные
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -154,7 +154,7 @@ function scrapeMvideo3() {
     // Создаю массив, куда буду записывать данные
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -196,7 +196,7 @@ function scrapeCitilink1() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -238,7 +238,7 @@ function scrapeCitilink2() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -280,7 +280,7 @@ function scrapeCitilink3() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -322,7 +322,7 @@ function scrapeCitilink4() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -365,7 +365,7 @@ function scrapeDns() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -408,7 +408,7 @@ function scrapeDns1() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
@@ -450,7 +450,7 @@ function vkontakte() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
     let data = [];
     // Запускаю Puppeteer
-    puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+    puppeteer.launch({ args: ['--no-sandbox'] })
         .then(async (browser) => {
             // Открываю в браузере новую страницу
             let page = await browser.newPage();
