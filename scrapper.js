@@ -41,17 +41,17 @@ expressApp.listen(port, () => {
 // Указываем url сайта, который будем скраппить
 // МВИДЕО
 const url_mvideo = [
-    'https://www.mvideo.ru/promo/sony-ps5-plus-gamepad',
-    'https://www.mvideo.ru/products/konsol-sony-playstation-5-digital-edition-40074203',
-    'https://www.mvideo.ru/products/konsol-sony-playstation-5-40073270'
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.mvideo.ru/promo/sony-ps5-plus-gamepad/',
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.mvideo.ru/products/konsol-sony-playstation-5-digital-edition-40074203/',
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.mvideo.ru/products/konsol-sony-playstation-5-40073270/'
 ];
 
 // СИТИЛИНК
 const url_citilink = [
-    'https://www.citilink.ru/product/igrovaya-konsol-playstation-5-digital-edition-ps719398806-belyi-cherny-1583761/',
-    'https://www.citilink.ru/product/igrovaya-konsol-playstation-5-ps719398707-belyi-chernyi-1497117/',
-    'https://www.citilink.ru/product/igrovaya-konsol-playstation-5-ps719398707-belyi-chernyi-1607200/',
-    'https://www.citilink.ru/product/igrovaya-konsol-playstation-5-ps719398707-belyi-chernyi-1607201/'
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.citilink.ru/product/igrovaya-konsol-playstation-5-digital-edition-ps719398806-belyi-cherny-1583761/',
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.citilink.ru/product/igrovaya-konsol-playstation-5-ps719398707-belyi-chernyi-1497117/',
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.citilink.ru/product/igrovaya-konsol-playstation-5-ps719398707-belyi-chernyi-1607200/',
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.citilink.ru/product/igrovaya-konsol-playstation-5-ps719398707-belyi-chernyi-1607201/'
 ];
 
 // DNS
@@ -59,14 +59,15 @@ const url_citilink = [
 // const url_dns = 'https://www.dns-shop.ru/ordering/027b1e6d3e890811/';
 // Делаю скраппинг только по первой странице всего каталога товаров
 const url_dns = [
-    'https://www.dns-shop.ru/catalog/17a8978216404e77/konsoli-playstation/?stock=0&f[tgcd]=16zi0l',
+    'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.dns-shop.ru/catalog/17a8978216404e77/konsoli-playstation/?stock=0&f[tgcd]=16zi0l/',
     'https://www.dns-shop.ru/product/44f657d4ac493332/igrovaa-konsol-playstation-5-digital-edition/',
     'https://www.dns-shop.ru/product/2645e72c6fca1b80/igrovaa-konsol-playstation-5/'
 ];
 
 // Vk Мвидео
-const url_vk = 'https://vk.com/mvideo/';
+const url_vk = 'http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://vk.com/mvideo/';
 
+// http://api.scraperapi.com?api_key=f06e2f70c413cb9401ec7424a2c24bb0&url=https://www.mvideo.ru/promo/sony-ps5-plus-gamepad/
 
 function scrapeMvideo1() {
     // Создаю массив, в который буду пушить все полученные данные с сайта
